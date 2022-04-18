@@ -51,6 +51,6 @@ div {
       transform: translate(0);
     }
   }
-  .pinkripper > img:hover {
+  .logo > img:hover {
     animation-play-state: paused;
   }
