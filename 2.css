@@ -1,0 +1,52 @@
+h1,h3,h4 {
+    color: pink;
+}
+
+li,div {
+    color:deeppink;
+}
+
+h3,h4 {
+    border:2px solid pink;
+    
+}
+
+div {
+    border: 5px dashed pink; 
+    width:300px; 
+    height:50px;
+}
+
+.logo > img {
+    width: 300px;
+    height: 300px;
+    animation: watch 1s linear infinite both;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes watch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-5px, 5px);
+    }
+    40% {
+      transform: translate(-5px, -5px);
+    }
+    60% {
+      transform: translate(5px, 5px);
+    }
+    80% {
+      transform: translate(5px, -5px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  .pinkripper > img:hover {
+    animation-play-state: paused;
+  }
