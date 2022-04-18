@@ -32,16 +32,16 @@ div {
       transform: translate(0);
     }
     20% {
-      transform: translate(-5px, 5px);
+      transform: translate(-250px, 250px);
     }
     40% {
-      transform: translate(-5px, -5px);
+      transform: translate(-150px, -250px);
     }
     60% {
-      transform: translate(5px, 5px);
+      transform: translate(250px, 250px);
     }
     80% {
-      transform: translate(5px, -5px);
+      transform: translate(200px, -250px);
     }
     100% {
       transform: translate(0);
