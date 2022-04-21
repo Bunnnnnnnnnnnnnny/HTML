@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="5.css">
+
+<body>
+
+<div id="header"> 
+  <h2>내가 좋아하는 것 💕</h2>
+</div>
+
+<div class="w3-container">
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'jjang')">애니1</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'rick')">애니2</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'nemo')">애니3</button>
+  </div>
+  
+  <div id="jjang" class="w3-container w3-border city">
+    <h2>짱구는 못말려</h2>
+    <img src="data\jjanggu.png" width="300" id="img1" alt="jjangu">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aut voluptatum expedita accusantium maiores possimus placeat! Molestias sequi expedita minima ut recusandae, nam earum, repellendus distinctio, quo quia incidunt adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eligendi explicabo illo adipisci doloribus sint nihil reprehenderit perspiciatis ea itaque quasi, labore animi! Quo nulla officia minima aperiam facere tempore!Loremlorem
+    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore doloremque magnam, adipisci amet earum, eligendi mollitia exercitationem sed animi odio suscipit vero quis facilis dolorem neque assumenda, minima ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad libero, expedita sit inventore qui quae modi enim delectus eius, blanditiis et commodi reiciendis, hic officiis corrupti sapiente suscipit maxime autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi quia asperiores, sint voluptas voluptate itaque eveniet dolores alias, iure quidem! Aspernatur ipsa quos animi voluptatem! Minus veritatis quam iusto.
+  </div>
+
+  <div id="rick" class="w3-container w3-border city" style="display:none">
+    <h2>릭 앤 모티</h2>
+    <img src=".\data\rick.jpg" id="img2" alt="rick">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore doloremque magnam, adipisci amet earum, eligendi mollitia exercitationem sed animi odio suscipit vero quis facilis dolorem neque assumenda, minima ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad libero, expedita sit inventore qui quae modi enim delectus eius, blanditiis et commodi reiciendis, hic officiis corrupti sapiente suscipit maxime autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi quia asperiores, sint voluptas voluptate itaque eveniet dolores alias, iure quidem! Aspernatur ipsa quos animi voluptatem! Minus veritatis quam iusto.
+  </div>
+
+  <div id="nemo" class="w3-container w3-border city" style="display:none">
+    <div id="ani">
+      <h2>네모네모 스폰지밥</h2>
+      <img src="data\spongebob.jpg" id="img3" alt="spongebob">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore doloremque magnam, adipisci amet earum, eligendi mollitia exercitationem sed animi odio suscipit vero quis facilis dolorem neque assumenda, minima ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad libero, expedita sit inventore qui quae modi enim delectus eius, blanditiis et commodi reiciendis, hic officiis corrupti sapiente suscipit maxime autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi quia asperiores, sint voluptas voluptate itaque eveniet dolores alias, iure quidem! Aspernatur ipsa quos animi voluptatem! Minus veritatis quam iusto.</p>
+    </div>
+    <div id="else">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio blanditiis consequatur illum aut minus nam expedita corporis tempore nobis odit ipsa quos dolor unde quaerat maxime optio, vero sint.
+  </div>
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+    div  {
+        background-color: green;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    span  {
+        background-color: blue;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    .special {
+        color: white;
+        
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    

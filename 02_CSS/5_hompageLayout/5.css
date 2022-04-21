@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#header {
+    margin: 30px;
+    text-align: center;
+}
+
+.w3-black {
+    top: 0px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+.city {
+    height: 1000px;
+}
+
+#jjangu {
+    display: inline;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+
+#text {
+    display: inline;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
